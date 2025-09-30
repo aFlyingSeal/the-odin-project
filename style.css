@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: Roboto, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Style */
+
+.header{
+    padding: 16px;
+    background-color: #1F2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: #F9FAF8;
+}
+
+.links ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.links ul li a{
+    text-decoration: none;
+    color: #F9FAF8
+}
+
+/* About Style */
+
+.about-container{
+    background-color: #1F2937;
+    display: flex;
+    gap: 32px;
+    padding: 100px 200px 100px 200px;
+}
+
+.about-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.about-text h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.about-text p{
+    font-size: 18px;
+    color: #F9FAF8;
+}
+
+.about-text button{
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: 0px;
+    border-radius: 10px;
+    padding: 12px 32px 12px 32px;
+}
+
+/* Product Style */
+
+.product-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0 100px 0;
+}
+
+.cards{
+    display: flex;
+    gap: 48px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card div{
+    border: 4px solid;
+    border-radius: 12px;
+    border-color: #3882F6;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Services Style */
+
+.services-container{
+    background-color: #E5E7EB;
+    padding: 100px 300px 100px 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.services-container p{
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.services-container h3{
+    align-self: flex-end;
+}
+
+/* Action Style */
+
+.action-container{
+    padding: 100px 200px 100px 200px;
+}
+
+.wrapper{
+    border-radius: 12px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.wrapper button{
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    border: 2px solid;
+    border-color: #F9FAF8;
+    border-radius: 12px;
+    color: #F9FAF8;
+    font-size: 14px;
+}
+
+/* Footer Style */
+
+.footer{
+    background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
