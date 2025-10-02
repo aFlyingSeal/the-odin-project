@@ -1,75 +1,56 @@
+const computerLabel = document.querySelector(".computer-choice");
+const options = document.querySelectorAll(".option");
+const label = document.querySelector(".label");
+const computerScoreLabel = document.getElementById("computer-wins");
+const playerScoreLabel = document.getElementById("player-wins");
+const drawCountLabel = document.getElementById("draw-count");
+
 let humanScore = 0;
 let computerScore = 0;
 let drawCount = 0;
+let round = 1;
 
 function getComputerChoice(){
     const choice = Math.floor(Math.random() * 3) + 1;
     switch (choice){
         case 1:
+            computerLabel.textContent = "🪨";
             return "rock";
         case 2:
+            computerLabel.textContent = "📄";
             return "paper";
         case 3:
+            computerLabel.textContent = "✂️"
             return "scissors";
     }
 }
 
-function getHumanChoice(){
-    let choice = prompt("Enter your choice (rock, paper, scissors): ");
-    while (true){
-        if (choice != "rock" && choice != "paper" && choice != "scissors"){
-            alert("Invalid input, please try again");
-            choice = prompt("Enter your choice (rock, paper, scissors): ");
-            break;
-        }
-        else break;
-    }
-    choice = choice.toLowerCase();
-    return choice;
-}
-
-function playRound(humanChoice, computerChoice){
-    console.log(`You chose: ${humanChoice}`);
-    console.log(`Computer chose: ${computerChoice}`);
+function playRound(humanChoice){
+    label.textContent = `You chose ${humanChoice}. `;
+    const computerChoice = getComputerChoice();
     if (humanChoice == computerChoice){
-        console.log("It's a draw!");
-        return 0;
+        label.textContent += "It's a draw";
+        label.style.color = "black";
+        drawCount += 1;
     }
     else if ((humanChoice == "rock" && computerChoice == "scissors") ||
              (humanChoice == "paper" && computerChoice == "rock") ||
              (humanChoice == "scissors" && computerChoice == "paper")){
-        console.log("Human wins!");
-        return 1;
+        label.textContent += "Player wins!";
+        label.style.color = "green";
+        humanScore += 1;
     }
     else{
-        console.log("Computer wins!");
-        return -1;
+        label.textContent += "Computer wins!";
+        label.style.color = "red";
+        computerScore += 1;
     }
+    round += 1;
+    updateScore();
 }
 
-let round = 1;
-
-function playGame(){
-    while (round <= 5){
-        console.log(`Round ${round}`);
-        const humanChoice = getHumanChoice();
-        const computerChoice = getComputerChoice();
-        const result = playRound(humanChoice, computerChoice);
-        if (result == 1){
-            humanScore += 1;
-        }
-        else if (result == -1){
-            computerScore += 1;
-        }
-        else{
-            drawCount += 1;
-        }
-        round += 1;
-    }
-    console.log("After 5 rounds, here are the results");
-    console.log(`Human wins: ${humanScore}`);
-    console.log(`Computer wins: ${computerScore}`);
-    console.log(`Draws: ${drawCount}`);
+function updateScore(){
+    computerScoreLabel.textContent = `Computer wins: ${computerScore}`;
+    playerScoreLabel.textContent = `Player wins: ${humanScore}`;
+    drawCountLabel.textContent = `Draws: ${drawCount}`;
 }
-
-playGame();
