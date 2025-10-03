@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <input class="display" readonly></input>
+        <div class="btn-container">
+            <button onclick='handleNumber("7")'>7</button>
+            <button onclick='handleNumber("8")'>8</button>
+            <button onclick='handleNumber("9")'>9</button>
+            <button class="operator" onclick='handleOperator("+")'>+</button>
+            <button onclick='handleNumber("4")'>4</button>
+            <button onclick='handleNumber("5")'>5</button>
+            <button onclick='handleNumber("6")'>6</button>
+            <button class="operator" onclick='handleOperator("-")'>-</button>
+            <button onclick='handleNumber("1")'>1</button>
+            <button onclick='handleNumber("2")'>2</button>
+            <button onclick='handleNumber("3")'>3</button>
+            <button class="operator" onclick='handleOperator("*")'>*</button>
+            <button onclick='handleNumber("0")'>0</button>
+            <button onclick='handleNumber(".")'>.</button>
+            <button class="equal" onclick="calculate()">=</button>
+            <button class="operator" onclick='handleOperator("/")'>/</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

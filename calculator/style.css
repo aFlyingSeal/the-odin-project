@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.main-container{
+    box-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.5);
+    background-color: #edebd7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 32px;
+    padding: 36px;
+}
+
+.display{
+    box-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.5);
+    background-color: #423e37;
+    color: #FFFFFF;
+    height: 85px;
+    border: 0;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    padding-left: 12px;
+    text-align: left;
+}
+
+.btn-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+button{
+    box-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.5);
+    background-color: #e3b23c;
+    color: #FFFFFF;
+    font-size: 24px;
+    height: 80px;
+    width: 80px;
+    border: 0;
+    border-radius: 50%;
+}
+
+button:hover{
+    background-color: hsl(42, 75%, 66%);
+    transform: translateY(-2px);
+}
+
+button:active{
+    background-color: hsl(42, 75%, 72%);
+    transform: translateY(-4px);
+}
+
+.operator{
+    background-color: hsl(42, 75%, 26%);
+}
+
+.operator:hover{
+    background-color: hsl(42, 75%, 36%);
+}
+
+.operator:active{
+    background-color: hsl(42, 75%, 46%);
+}
+
+.equal{
+    background-color: #a39594;
+}
+
+.equal:hover{
+    background-color: hsl(4, 8%, 51%);
+}
+
+.equal:active{
+    background-color: hsl(4, 8%, 41%);
+}
