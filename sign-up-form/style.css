@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+.sign-up-section{
+    height: 100vh;
+    display: flex;
+    background-color: #f5f5f5;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.image-side{
+    background-image: url("images/sailboat.avif");
+    background-size: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin-bottom: 200px;
+}
+
+.logo img{
+    height: 110px;
+    width: 80px;
+    margin-right: 6px;
+}
+
+.logo p{
+    font-size: 48px;
+    color: #f5f5f5;
+}
+
+.form-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.introductory-text{
+    padding-left: 32px;
+    padding-right: 32px;
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: bold;
+}
+
+.sign-up-form{
+    padding: 24px 32px 32px 32px;
+    background-color: #FEFFFC;
+    font-family: 'Noto Sans', sans-serif;
+    box-shadow:
+        0 1px 3px rgba(0, 0, 0, 0.08),
+        0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.sign-up-form legend{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.input-container{
+    display: flex;
+    gap: 64px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.input-section label{
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.input-section input{
+    padding: 0.3rem 0.75rem;
+    font-size: 16px;
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-section input:focus{
+    border-color: #2563EB;
+    box-shadow: 0 0 0 1px #2563EB;
+}
+
+.input-section input:invalid{
+    border-color: #dc2626;
+}
+
+.input-section input:invalid:focus{
+    box-shadow: 0 0 0 1px #dc2626;
+}
+
+.actions{
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-top: 32px;
+}
+
+.actions button{
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: #596D48;
+    color: white;
+    padding: 12px 32px 12px 32px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.actions button:hover{
+    background-color: hsl(92, 20%, 45%);
+    box-shadow: 0 0 1px 1px hsl(92, 20%, 25%);
+}
+
+.actions button:active{
+    background-color: hsl(92, 20%, 55%);
+    transform: translateY(-2px);
+}
+
+.actions p{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.actions p a{
+    text-decoration: none;
+    color: hsl(92, 20%, 25%);
+}
