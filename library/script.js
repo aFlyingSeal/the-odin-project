@@ -54,3 +54,37 @@ form.addEventListener('submit', (e) => {
     form.reset();
     modal.style.display = 'none';
 });
+
+bookContainer.addEventListener("click", (e) => {
+    const card = e.target.closest(".card");
+    if (!card)
+        return;
+    
+    const title = card.querySelector(".title");
+    const titleText = title ? title.textContent.trim() : "";
+
+    // removing book
+    if (e.target.classList.contains("remove-btn")){
+        card.remove();
+        const idx = books.findIndex(book => book.title === titleText);
+        if (idx !== -1)
+            books.splice(idx, 1);
+    }
+
+    // marking read/unread for a book
+    if (e.target.classList.contains("mark-btn")){
+        const book = books.find(book => book.title === titleText);
+        const markBtn = card.querySelector(".mark-btn");
+
+        if (book && book.isRead === false){
+            card.style.borderLeft = "8px solid hsl(103, 54%, 52%)";
+            book.isRead = true;
+            markBtn.textContent = "Mark As Unread";
+        }
+        else if (book){
+            card.style.borderLeft = "8px solid hsl(19, 31%, 68%)";
+            book.isRead = false;
+            markBtn.textContent = "Mark As Read";
+        }
+    }
+});
