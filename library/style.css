@@ -7,7 +7,7 @@ body{
 }
 
 .library{
-    height: 100vh;
+    min-height: 100vh;
     background-color: #F4F1EC;
     display: flex;
     flex-direction: column;
@@ -68,9 +68,9 @@ body{
 }
 
 .card-container{
-    height: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
 }
 
 .card{
@@ -191,4 +191,23 @@ form{
 
 .actions-container button:active{
     background-color: hsl(0, 0%, 95%);
+}
+
+@media (width < 1068px){
+    .card{
+        height: 150px;
+        width: 250px;
+    }
+}
+
+@media (width < 725px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        height: 150px;
+        width: 250px;
+    }
 }
