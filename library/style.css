@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
+    position: relative;
     margin: 0;
     font-family: 'Noto Sans', sans-serif;
 }
@@ -55,7 +56,7 @@ body{
     background-color: #3E4A61;
 }
 
-.footer p{
+.footer{
     font-size: 16px;
     color: #FFFFFF;
     padding: 8px 16px;
@@ -128,12 +129,66 @@ body{
     background-color: hsla(120, 100%, 25%, 0.75);
 }
 
-.form-container{
+.modal-container{
+    background-color: #FEFFFC;
     position: fixed;
-    inset: 0;
-    background: rbga(0, 0, 0, 0.5);
-    /* display: none; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 300px;
+    width: 400px;
+    border-radius: 16px;
+    box-shadow: 0 0 3px rgb(0, 0, 0, 0.5);
+    animation: ease-in 0.2s;
 }
 
+form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-container{
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.input-container input{
+    background-color: hsl(0, 0%, 90%);
+    font-size: 20px;
+    align-self: flex-end;
+    border: none;
+    padding: 8px;
+}
+
+.actions-container{
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.actions-container button{
+    background-color: hsl(0, 0%, 75%);
+    font-size: 16px;
+    padding: 8px 32px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 1px 1px 2spx rgb(0, 0, 0, 0.5);
+    transition: all 0.1s;
+}
+
+.actions-container button:hover{
+    background-color: hsl(0, 0%, 85%);
+}
+
+.actions-container button:active{
+    background-color: hsl(0, 0%, 95%);
+}
