@@ -32,6 +32,14 @@ body{
     border: 1px solid black;
 }
 
+.square:hover{
+    background-color: hsl(0, 0%, 85%);
+}
+
+.square:active{
+    background-color: hsl(0, 0%, 70%);
+}
+
 .status{
     font-size: 24px;
 }
