@@ -4,3 +4,6 @@
 - Made using HTML, CSS and Javascript.
 - I am planning to add local storage along with some other features like searching for a specific book or something soon.
 - Have a good day reading this.
+---
+### Update note:
+- Writing this line after finishing Javascript lesson on Classes, I changed the book construction using constructors to classes.

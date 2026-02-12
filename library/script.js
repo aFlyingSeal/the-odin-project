@@ -8,12 +8,21 @@ const form = document.querySelector(".book-form");
 
 const books = [];
 
-function Book(title, author){
-    this.title = title;
-    this.author = author;
-    this.isRead = false;
-    this.id = crypto.randomUUID(); //future use?
-}
+class Book{
+    constructor(title, author){
+        this.title = title;
+        this.author = author;
+        this.isRead = false;
+        this.id = crypto.randomUUID();
+    }
+};
+
+// function Book(title, author){
+//     this.title = title;
+//     this.author = author;
+//     this.isRead = false;
+//     this.id = crypto.randomUUID(); //future use?
+// }
 
 function addBookToLibrary(title, author){
     const book = new Book(title, author);
