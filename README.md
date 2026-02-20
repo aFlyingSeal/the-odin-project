@@ -30,55 +30,55 @@ Have a good day reading this.
 - [ ] **Completed:** TBD <insert date when finished>
 - **Tech:** HTML, CSS, JavaScript
 - **Key Features:** 
-- [Live Demo](https://link-to-demo.com) | [Source Code](./admin-dashboard)
+- [Live Demo](./admin-dashboard/index.html) | [Source Code](./admin-dashboard)
 
 #### 2. Calculator
 - [ ] **Completed:** TBD
 - **Tech:** HTML, CSS, JavaScript
 - **Key Features:** 
-- [Live Demo](https://link-to-demo.com) | [Source Code](./calculator)
+- [Live Demo](./calculator/index.html) | [Source Code](./calculator)
 
 #### 3. Etch-a-sketch
 - [ ] **Completed:** TBD
 - **Tech:** HTML, CSS, JavaScript
 - **Key Features:** 
-- [Live Demo](https://link-to-demo.com) | [Source Code](./etch-a-sketch)
+- [Live Demo](./etch-a-sketch/index.html) | [Source Code](./etch-a-sketch)
 
 #### 4. Personal Landing Page
 - [ ] **Completed:** TBD
 - **Tech:** HTML, CSS, JavaScript
 - **Key Features:** 
-- [Live Demo](https://link-to-demo.com) | [Source Code](./landing-page)
+- [Live Demo](./landing-page/index.html) | [Source Code](./landing-page)
 
 #### 5. Library
 - [ ] **Completed:** TBD
 - **Tech:** HTML, CSS, JavaScript
 - **Key Features:** 
-- [Live Demo](https://link-to-demo.com) | [Source Code](./library)
+- [Live Demo](./library/index.html) | [Source Code](./library)
 
 #### 6. Recipes
 - [ ] **Completed:** TBD
 - **Tech:** HTML, CSS, JavaScript
 - **Key Features:** 
-- [Live Demo](https://link-to-demo.com) | [Source Code](./recipes)
+- [Live Demo](./recipes/index.html) | [Source Code](./recipes)
 
 #### 7. Rock-Paper-Scissors
 - [ ] **Completed:** TBD
 - **Tech:** HTML, CSS, JavaScript
 - **Key Features:** 
-- [Live Demo](https://link-to-demo.com) | [Source Code](./rock-paper-scissors)
+- [Live Demo](./rock-paper-scissors/index.html) | [Source Code](./rock-paper-scissors)
 
 #### 8. Sign-up Form
 - [ ] **Completed:** TBD
 - **Tech:** HTML, CSS, JavaScript
 - **Key Features:** 
-- [Live Demo](https://link-to-demo.com) | [Source Code](./sign-up-form)
+- [Live Demo](./sign-up-form/index.html) | [Source Code](./sign-up-form)
 
 #### 9. Tic-tac-toe
 - [ ] **Completed:** TBD
 - **Tech:** HTML, CSS, JavaScript
 - **Key Features:** 
-- [Live Demo](https://link-to-demo.com) | [Source Code](./tic-tac-toe)
+- [Live Demo](./tic-tac-toe/index.html) | [Source Code](./tic-tac-toe)
 
 </details>
 
