@@ -11,3 +11,78 @@ I decided to make this into an archive from now on since after the _Webpack_ les
 This repo will also be renamed from *the-odin-project* to *odin-foundations* for future reference.
 
 Have a good day reading this.
+
+## 🚀 Project Roadmap & Progress
+
+
+### 🛠️ Current Focus
+- **Project <insert name>**: <insert progress>
+- **Project <insert name>**: <insert progress>
+
+---
+
+### 📚 Project Gallery & History
+
+<details>
+<summary><b>Click to view completed project history</b></summary>
+
+#### 1. Admin Dashboard
+- [ ] **Completed:** TBD <insert date when finished>
+- **Tech:** HTML, CSS, JavaScript
+- **Key Features:** 
+- [Live Demo](./admin-dashboard/index.html) | [Source Code](./admin-dashboard)
+
+#### 2. Calculator
+- [ ] **Completed:** TBD
+- **Tech:** HTML, CSS, JavaScript
+- **Key Features:** 
+- [Live Demo](./calculator/index.html) | [Source Code](./calculator)
+
+#### 3. Etch-a-sketch
+- [ ] **Completed:** TBD
+- **Tech:** HTML, CSS, JavaScript
+- **Key Features:** 
+- [Live Demo](./etch-a-sketch/index.html) | [Source Code](./etch-a-sketch)
+
+#### 4. Personal Landing Page
+- [ ] **Completed:** TBD
+- **Tech:** HTML, CSS, JavaScript
+- **Key Features:** 
+- [Live Demo](./landing-page/index.html) | [Source Code](./landing-page)
+
+#### 5. Library
+- [ ] **Completed:** TBD
+- **Tech:** HTML, CSS, JavaScript
+- **Key Features:** 
+- [Live Demo](./library/index.html) | [Source Code](./library)
+
+#### 6. Recipes
+- [ ] **Completed:** TBD
+- **Tech:** HTML, CSS, JavaScript
+- **Key Features:** 
+- [Live Demo](./recipes/index.html) | [Source Code](./recipes)
+
+#### 7. Rock-Paper-Scissors
+- [ ] **Completed:** TBD
+- **Tech:** HTML, CSS, JavaScript
+- **Key Features:** 
+- [Live Demo](./rock-paper-scissors/index.html) | [Source Code](./rock-paper-scissors)
+
+#### 8. Sign-up Form
+- [ ] **Completed:** TBD
+- **Tech:** HTML, CSS, JavaScript
+- **Key Features:** 
+- [Live Demo](./sign-up-form/index.html) | [Source Code](./sign-up-form)
+
+#### 9. Tic-tac-toe
+- [ ] **Completed:** TBD
+- **Tech:** HTML, CSS, JavaScript
+- **Key Features:** 
+- [Live Demo](./tic-tac-toe/index.html) | [Source Code](./tic-tac-toe)
+
+</details>
+
+---
+
+### Upcoming projects
+- <insert project name>: <insert its description>
